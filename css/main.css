@@ -1,0 +1,786 @@
+	
+@font-face{
+	font-family: 'MaisonNeueLight';
+	src: url('../fonts/Maison Neue/MaisonNeue-Light.otf');
+}
+@font-face{
+	font-family: 'MaisonNeue';
+	src: url('../fonts/Maison Neue/MaisonNeue-Medium.otf');
+}
+@font-face{
+	font-family: 'MaisonNeueBook';
+	src: url('../fonts/Maison Neue/MaisonNeue-Book.otf');
+}
+@font-face{
+	font-family: 'MaisonNeueBold';
+	src: url('../fonts/Maison Neue/MaisonNeue-Bold.otf');
+}
+@font-face{
+	font-family: 'MaisonNeueExtraBold';
+	src: url('../fonts/Maison Neue/MaisonNeue-ExtraBold.otf');
+}
+@font-face{
+	font-family: 'MaisonNeueBlack';
+	src: url('../fonts/Maison Neue/MaisonNeue-Black.otf');
+}
+
+html{
+
+}
+body{
+	background-color: #FFFF;
+	font-family: 'MaisonNeue';
+}
+@media (min-width: 576px){
+	.navbar{
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		top: 0;
+		height: 80px;
+		background-color: rgba(0,0,0,0);
+	}
+	.navbar .navbar-toggler{
+		border: none;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		padding: .25rem;
+		outline: none;
+		font-size: 28px;
+		color: #FFF;
+	}
+	.navbar .navbar-brand{
+		font-family: 'MaisonNeueBlack';
+		font-size: 1.5rem;
+		color: #FFF;
+	}	
+	.navbar .navbar-nav{
+		margin-left: 43%;
+	}
+	.navbar .nav-item{
+		margin-left: 15px;
+	}
+	.navbar .nav-link{
+		color: #FFF;
+		font-size: 20px;
+		font-family: 'MaisonNeue';
+	}
+	.navbar .nav-link:hover{
+		color: #EDC966;
+		transition: .10s;
+	}
+	.navbar .nav-item.active a{
+		color: #EDC966;
+		font-family: 'MaisonNeueBold';
+	}
+	/*.navbar-collapse .dropdown-menu{
+		border: none;
+		border-radius: 20px;
+	}
+	.navbar-collapse .dropdown-item{
+		font-size: 14px;
+		font-family: 'MaisonNeueLight';
+	}
+	.navbar-collapse .dropdown-item:hover,.dropdown-item:focus{
+		background-color: rgba(0,0,0,0);
+	}*/
+	.bw-home-hero-area{
+		position: relative;
+		height: 730px;
+		background-image: linear-gradient(180deg,#2B2FFF,#2B9AFF);
+		padding: 150px 0px 0px 0px;
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+	}
+	.bw-home-hero-area::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -5px;
+		background: url('../img/background/circle.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
+		width: 730px;
+		height: 100%;
+	}
+	.bw-home-feature-area{
+		position: relative;
+		min-height: 500px;
+		border-radius: 50px;
+	}
+	.bw-home-feature-area .feature-top{
+		display: flex;
+		margin-bottom: 15px;
+	}
+	.bw-home-feature-area .feature-bottom{
+		display: flex;
+		margin-bottom: 15px;
+	}	
+	.bw-home-feature-area .feature-list{
+		background-color: #FFF;
+		font-family: 'MaisonNeue';
+		padding: 30px;
+		width: 100%;
+		margin: 0px 5px;
+		box-shadow: 0px 8px 25px 8px #F0F0F0;
+		border-radius: 20px;
+	}
+	.bw-home-portfolio-area{
+		position: relative;
+		min-height: 500px;
+	}
+	.bw-home-portfolio-area .owl-carousel{
+		
+	}
+	.bw-home-packet-area{
+		position: relative;
+		min-height: 500px;
+		border-radius: 50px;
+	}
+	.bw-home-packet-area .packet-list img{
+		object-fit: cover;
+		width: 100%;
+		height: 180px;
+	}
+	.bw-home-blog-area{
+		position: relative;
+		min-height: 500px;
+		
+	}
+	.bw-home-about-area{
+		position: relative;
+		min-height: 500px;
+		border-radius: 50px;
+	}
+	.bw-home-contact-area{
+		position: relative;
+		min-height: 500px;
+		
+	}
+	.bw-home-contact-area .info-item{
+		margin-bottom: 15px;
+	}
+	
+	
+}
+/*@media (max-width: 768px){
+	.navbar{
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		top: 0;
+		height: 80px;
+		background-color: rgba(0,0,0,0);
+	}
+	.navbar .navbar-brand{
+		font-family: 'MaisonNeueBlack';
+		font-size: 28px;
+		color: #FFF;
+	}
+	.navbar .navbar-nav{
+		margin-left: 0;
+	}
+	.navbar .nav-item{
+		margin-right: 0px;
+	}
+	.navbar .nav-link{
+		color: #FFF;
+		font-size: 18px;
+		font-family: 'MaisonNeue';
+	}
+	.navbar .nav-link:hover{
+		color: #EDC966;
+		transition: .10s;
+	}
+	.navbar-collapse{
+		position: absolute;
+		left: 0;
+		top: 80px;
+		margin: 0;
+		background-color: rgba(0,0,0,0);
+		width: 100%;
+	}
+	.navbar-collapse .nav-link{
+		color: #FFF;
+		padding: 15px 30px;
+	}
+	.navbar-collapse .nav-link:hover{
+		transition: .10s;
+		color: #EDC966;
+	}
+	
+	.navbar .navbar-toggler{
+		border: none;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		padding: .25rem;
+		outline: none;
+		font-size: 20px;
+		color: #FFF;
+	}
+	.bw-home-feature-area .feature-list{
+		background-color: #FFF;
+		font-family: 'MaisonNeue';
+		padding: 30px;
+		width: 50%;
+		box-shadow: 0px 8px 25px 8px #F0F0F0;
+		border-radius: 20px;
+	}
+	.bw-home-hero-area{
+		position: relative;
+		min-height: 700px;
+		background-image: linear-gradient(180deg,#2B2FFF,#2B9AFF);
+		padding: 50px 15px 50px 15px;
+	}
+	.bw-home-hero-area::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url('../img/background/circle.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
+		width: 100%;
+		height: 100%;
+	}
+}*/
+@media (max-width: 576px){
+	.navbar{
+		position: absolute;
+		width: 100%;
+		z-index: 1080;
+		padding: 15px 30px;
+		background-color: rgba(0,0,0,0);
+		display: flex;
+	}
+	.navbar .navbar-brand{
+		font-family: 'MaisonNeueBlack';
+		font-size: 1.5rem;
+		padding: 0rem;
+		color: #FFF;
+	}
+	.navbar .navbar-toggler{
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		padding: .25rem;
+		outline: none;
+		font-size: 20px;
+		color: #FFF;
+	}
+	.navbar-nav .nav-link{
+		padding: 1rem 2rem ;
+		color: #FFF;
+		font-size: 18px;
+		border-bottom: 1px dotted #EFEFEF;
+		font-family: 'MaisonNeue';
+	}
+	.navbar-nav .nav-link:hover{
+		color: #EDC966;
+		transition: .10s;
+	}
+	.navbar-nav .nav-item.active a{
+		color: #EDC966;
+		font-family: 'MaisonNeueBold';
+	}
+	.navbar-nav .nav-link span{
+		display: none;
+	}
+	.navbar-nav .dropdown-menu{
+		display: none;
+	}
+	.navbar-collapse{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;	
+		background-color: #FFF;	
+	}
+	.navbar-collapse.show{
+		
+		/*overflow-x: scroll;*/
+	}
+	.navbar-collapse .nav-link{
+		color: #000;
+	}
+	.navbar-collapse .nav-link:hover{
+		transition: .10s;
+		color: #EDC966;
+	}
+	.bw-home-hero-area{
+		position: relative;
+		background-image: linear-gradient(90deg,#2B2FFF,#2B9AFF);
+		padding: 100px 15px;
+	}
+	.bw-home-hero-area::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -5px;
+		right: -5px;
+		background: url('../img/background/circle.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
+		width: 105%;
+		height: 100%;
+	}
+	.bw-home-hero-area .bw-hero-img{
+		position: relative;
+	}
+	.bw-home-hero-area .bw-hero-img img{
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+	}
+	.bw-home-feature-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-feature-area .feature-list{
+		background-color: #FFF;
+		font-family: 'MaisonNeue';
+		padding: 30px;
+		width: 100%;
+		margin-bottom: 15px;
+		box-shadow: 0px 8px 25px 8px #F0F0F0;
+		border-radius: 20px;
+	}
+	.bw-home-portfolio-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-packet-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-packet-area .packet-list{
+		margin-bottom: 15px;
+	}
+	.bw-home-packet-area .packet-list img{
+		object-fit: cover;
+		width: 100%;
+		height: 200px;
+	}
+	.bw-home-blog-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-about-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-contact-area{
+		position: relative;
+		min-height: 500px;
+		padding: 50px 15px;
+	}
+	.bw-home-contact-area .info-item{
+		display: block;
+		margin-bottom: 15px;
+	}
+
+
+}
+.particles-js-canvas-el{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;	
+}
+.bw-home-hero-area .bw-hero-img{
+	position: relative;
+	overflow: hidden;
+}
+.bw-home-hero-area .bw-hero-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.bw-home-hero-area .bw-hero-content .large-text h1{
+	font-size: 4.25rem;
+	font-family: 'MaisonNeueBlack';
+	background-image: linear-gradient(90deg,#EDC966,#FFC72B);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.bw-home-hero-area .bw-hero-content .small-text h5{
+	color: #FFF;
+	font-family: 'MaisonNeueLight';
+}
+
+.bw-home-feature-area{
+	position: relative;
+	min-height: 500px;
+	background-color: #F5F7FA;
+}
+
+.bw-home-feature-area .bw-feature-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-feature-area .bw-feature-title h3{
+	font-family: 'MaisonNeue';
+}
+.bw-home-feature-area .feature-list{
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0px 3px 8px 1px #F1F3F0;
+	height: 330px;
+}
+.bw-home-feature-area .feature-icon{
+	margin: 10px auto;
+	width: 50px;
+	height: 50px;
+	background: #C2E1FF;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 12px;
+	left: 50%;
+}
+.bw-home-feature-area .feature-icon i{
+	font-size: 28px;
+	color: #2B2EFF;
+
+}
+.bw-home-feature-area .feature-content{
+	text-align: center;
+}
+.bw-home-feature-area .feature-content h5{
+	font-family: 'MaisonNeueBold';
+}
+.bw-home-feature-area .feature-content p{
+	font-family: 'MaisonNeueLight';
+}
+.bw-home-portfolio-area{
+	position: relative;
+	min-height: 500px;
+	background-color: #FFF;	
+}
+.bw-home-portfolio-area .bw-portfolio-title{
+
+}
+.bw-home-portfolio-area .bw-portfolio-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-portfolio-area .bw-portfolio-title a{
+	position: absolute;
+	right: 0;
+	line-height: 50px;
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+}
+.bw-home-portfolio-area .portfolio-list{
+	position: relative;
+	border-radius: 20px;
+	
+}
+.bw-home-portfolio-area .portfolio-img{
+	position: relative;
+	height: 250px;
+}
+
+.bw-home-portfolio-area .portfolio-img img{
+	height: 250px;
+	width: 100%;	
+	object-fit: cover;
+}
+.bw-home-portfolio-area .portfolio-text p{
+	font-family: 'MaisonNeueBook';
+}
+
+.bw-home-portfolio-area .owl-prev{
+	position: absolute;
+	top: 50%;
+	left: -60px;
+	transform: translateY(-50%);
+}
+.bw-home-portfolio-area .owl-next{
+	position: absolute;
+	top: 50%;
+	right: -60px;
+	transform: translateY(-50%);
+}
+.bw-home-portfolio-area .owl-nav button.owl-prev{
+	background-color: #2B9AFF;
+	width: 45px;
+	color: #FFF;
+	height: 45px;
+	border-radius: 40%;
+	box-shadow: 0px 1px 10px 0px #2B9AFF;
+}
+.bw-home-portfolio-area .owl-nav button.owl-next{
+	background-color: #2B9AFF;
+	width: 45px;
+	color: #FFF;
+	height: 45px;
+	border-radius: 40%;
+	box-shadow: 0px 1px 10px 0px #2B9AFF;
+}
+.bw-home-packet-area{
+	position: relative;
+	min-height: 500px;
+	background-color: #F5F7FA;
+}
+
+.bw-home-packet-area .bw-packet-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-packet-area .packet-list{
+	background-color: #FFF;
+	padding: 30px;
+	height: 800px;
+	box-shadow: 0px 8px 25px 8px #F0F0F0;
+	text-align: center;
+	border-radius: 20px;
+	border: 5px solid #FFF;
+}
+.bw-home-packet-area .packet-list:hover{
+	border-color: #FFC72B;
+}
+.bw-home-packet-area .packet-list img{
+	object-fit: contain;
+	width: 100%;
+	height: 150px;
+}
+.bw-home-packet-area .packet-list h4{
+	font-family: 'MaisonNeueBold';
+	color: #000;
+}
+.bw-home-packet-area .packet-list h5{
+	font-family: 'MaisonNeueBook';
+	color: #000;
+}
+.bw-home-packet-area .packet-list p{
+	font-family: 'MaisonNeueLight';
+	color: #000;
+}
+.bw-home-packet-area .packet-list i{
+	background-color: #09BA4D;
+	padding: 0px 3px;
+	color: #FFF;
+	border-radius: 20px;
+}
+.bw-home-packet-area .packet-list .btn{
+	background-image: linear-gradient(180deg,#EDC966,#FFC72B);
+	border-color: #EDC966;
+	color: #FFF;
+	border-radius: 20px;
+	height: 50px;
+	width: 100%;
+}
+.bw-home-packet-area .packet-list .btn:hover{	
+	border-color: #EDC966;
+	color: #FFF;
+	border-radius: 20px;
+	height: 50px;
+	transition: .5s;
+}
+.bw-home-packet-area .ecommerce{
+	background-color: #2B9AFF;
+	padding: 30px;
+	height: 800px;
+	box-shadow: 0px 0px 15px 0px #2B9AFF;
+	border: 5px solid #2B9AFF;
+	border-radius: 20px;
+}
+.bw-home-packet-area .ecommerce h4{
+	font-family: 'MaisonNeueBold';
+	color: #FFF;
+}
+.bw-home-packet-area .ecommerce h5{
+	font-family: 'MaisonNeueBook';
+	color: #FFF;
+}
+.bw-home-packet-area .ecommerce p{
+	font-family: 'MaisonNeueLight';
+	color: #FFF;
+}
+.bw-home-packet-area .ecommerce i{
+	background-color: #09BA4D;
+	padding: 0px 3px;
+	color: #FFF;
+	border-radius: 20px;
+}
+.bw-home-packet-area .ecommerce .btn{
+	background-image: linear-gradient(180deg,#EDC966,#FFC72B);
+	color: #FFF;
+	border-radius: 20px;
+	padding: 10px 30px;
+	width: 100%;
+}
+.bw-home-packet-area .ecommerce .btn:hover{
+	background-color: rgba(0,0,0,0);
+	color: #FFF;
+	border-radius: 20px;
+	padding: 10px 30px;
+	transition: .5s;
+}
+.bw-home-blog-area {
+	background-color: #FFF;
+}
+.bw-home-blog-area .bw-blog-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-blog-area .blog-content{
+	position: relative;
+}
+.bw-home-blog-area .blog-content .blog-img{
+	position: relative;
+	height: 250px;
+	
+	border-radius: 20px;
+}
+
+.bw-home-blog-area .blog-content .blog-img img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+.bw-home-blog-area .blog-content .blog-text{
+	margin: 15px 0px;
+}
+.bw-home-blog-area .blog-content .blog-text h4{
+	font-family: 'MaisonNeueBook';
+}
+.bw-home-blog-area .owl-prev{
+	position: absolute;
+	top: 50%;
+	left: -60px;
+	transform: translateY(-50%);
+}
+.bw-home-blog-area .owl-next{
+	position: absolute;
+	top: 50%;
+	right: -60px;
+	transform: translateY(-50%);
+}
+.bw-home-blog-area .owl-nav button.owl-prev{
+	background-color: #2B9AFF;
+	width: 45px;
+	color: #FFF;
+	height: 45px;
+	border-radius: 40%;
+	box-shadow: 0px 1px 10px 0px #2B9AFF;
+}
+.bw-home-blog-area .owl-nav button.owl-next{
+	background-color: #2B9AFF;
+	width: 45px;
+	color: #FFF;
+	height: 45px;
+	border-radius: 40%;
+	box-shadow: 0px 1px 10px 0px #2B9AFF;
+}
+.bw-home-about-area{
+	background-color: #FFF;
+	position: relative;
+	min-height: 400px;
+}
+.bw-home-about-area .bw-about-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-about-area .about-img{
+	position: relative;
+	height: 400px;
+}
+.bw-home-about-area .about-img img{
+	object-fit: cover;
+	width: 100%:;
+	height: 400px;
+}
+.bw-home-about-area .about-info h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-about-area .about-info p{
+	font-family: 'MaisonNeueLight';
+	margin: 0;
+}
+.bw-home-contact-area{
+	position: relative;
+	min-height: 500px;
+	background-color: #F5F7FA;
+}
+
+.bw-home-contact-area .bw-contact-title h1{
+	font-family: 'MaisonNeueBlack';
+}
+.bw-home-contact-area .icon{
+	color: #2B9AFF;
+	background-color: #FFF;
+	text-align: center;
+	border-radius: 12px;
+	font-size: 32px;
+	width: 50px;
+	height: 50px;
+	line-height: 55px;
+}	
+.bw-home-contact-area .info{
+	padding: 0px 15px;
+}
+.bw-home-contact-area .info h5{
+	margin: 0;
+	font-family: 'MaisonNeueBold';
+}
+.bw-home-contact-area .info p{
+	margin: 0;
+	font-family: 'MaisonNeueBook';
+}
+.bw-home-contact-area .maps-area iframe{
+	width: 100%;
+	border-radius: 12px;
+	height: 500px;
+}
+.bw-home-contact-area .contact-form-area .form-control{
+	border-color: #F0F0F0;
+	border: none;
+}
+.bw-home-contact-area .contact-form-area input[type=text]{
+	height: 45px;
+	border-radius: 12px;
+}
+.bw-home-contact-area .contact-form-area textarea{
+	border-radius: 12px;
+	height: 100px;
+}
+.bw-home-contact-area .contact-form-area .btn{
+	background: #2B9AFF;
+	border-color: #2B9AFF;
+	color: #FFF;
+	height: 50px;
+	width: 150px;
+	border-radius: 12px;
+}
+.footer{
+	padding: 20px 0px;
+	background-color: #F5F7FA;
+}
+
+.footer .gototop{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 15px 0px;
+	bottom: 0;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	color: #FFF;
+	font-size: 24px;
+	background-color: #2B9AFF;
+	opacity: 0;
+	border-radius: 12px;
+
+}
+.footer .license p{
+	text-align: center;
+	margin: 0;
+}
